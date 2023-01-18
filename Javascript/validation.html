@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <title>Email validation</title>
+    <body>
+        <script>
+            function onLogin()
+            {
+                 var email = document.getElementById("emailid").value;
+                 var password =document.getElementById("pwdid").value;
+                 console.log(email);
+                 console.log(password);
+
+                 if(email == "abc@test.com" && password == "abcpassword")
+                 {
+                    document.getElementById("loginmsg").innerText = "Login Sucessful";
+                 }
+                 else
+                 {
+                    document.getElementById("loginmsg").innerText = "Login Unsucessful";
+                 }
+                 
+                 if(email == "abc@test.com" && password !== "abcpassword")
+                 {
+                    document.getElementById("loginmsg").innerText = "password is wrong";
+                 }
+                 if(email !== "abc@test.com" && password == "abcpassword")
+                 {
+                    document.getElementById("loginmsg").innerText ="Email is wrong";
+                 }
+                 if(email !== "abc@test.com" && password !== "abcpassword")
+                 {
+                    document.getElementById("loginmsg").innerText ="Email and password both are wrong";
+                 }
+            }     
+        </script>
+        <input id="emailid" type="text" placeholder="Email"><br><br>
+        <input id="pwdid" type="password" placeholder="password"><br><br>
+        <button onclick="onLogin()">Login</button>
+
+        <p id="loginmsg"></p>
+    </body>
+</html>

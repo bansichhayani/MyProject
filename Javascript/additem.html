@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>additem</title>
+    </head>
+    <body>
+        <h1><centre>Grocery List</centre></h1>
+
+        <input type="text" placeholder="Item name" id = "item">
+        <button onclick="buttonclick()">Add Item to list</button>
+
+        <div id="listDiv">  </div>
+
+        <script>
+
+            function buttonclick()
+            {
+                var iname = document.getElementById("item").value;
+                var h1tag = document.createElement("h1");
+                h1tag.innerHTML = iname;
+
+                var division = document.getElementById("listDiv");
+                division.appendChild(h1tag);
+
+            }
+        </script>
+            
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <h2><centre>Student Registration Form</centre></h2>
+        <script>
+            function callvalue()
+            {
+                var f1name = document.getElementById("fname").value;
+                var l1name = document.getElementById("lname").value;
+                var mobno = document.getElementById("mob").value;
+                var gen = document.getElementById("gender").value;
+                var cours = document.getElementById("course").value;
+
+                document.write("Your Info : <br>"+ "Name : "+f1name+"<br>");
+                document.write("Last name : "+l1name);
+            }
+        </script>
+        <form onsubmit="callvalue()" target="_self">
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Last Name :</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="mob">Mob no:</label>
+            <input type="number" id="mob" name="mob" required><br><br>
+            <label for="gen">Gender :</label>
+            <input type="radio" name="gender" value="male" id="gender">
+            <label>Male</label>
+            <input type="radio" name="gender" value="female" id="gender" required>
+            <label>Female</label><br><br>
+            <lable for="course">Select courses :</lable>
+            <select id="course" name="course" required>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>
