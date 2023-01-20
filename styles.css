@@ -1,0 +1,24 @@
+.class4
+{
+    display:none;
+}
+
+.openImageClass{
+    width: 100px;
+    display: none;
+    cursor:pointer
+}
+
+.closeImageClass{
+    width: 100px;
+    display: none ;
+    cursor:pointer 
+}
+
+.active{
+    display:block;
+}
+
+.timer{
+    display: flex;
+}
