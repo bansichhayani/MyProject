@@ -67,3 +67,25 @@ function displayDate() {
 }
 
 setInterval(displayDate, 1000);
+
+
+
+function onbuttonClick(){
+
+    var number = document.getElementById('pno').value;
+    var i = 2;
+
+    if(number == 1){
+        document.getElementById('pmsg').innerText = "This is neither prime nor compiste number";
+    }
+    else if(number < 1){
+        document.getElementById('pmsg').innerText = "This is not a prime number";
+    }
+    else if(number%2 == 0){
+        document.getElementById('pmsg').innerText = "This is not a prime number";
+    }
+    else{
+        document.getElementById('pmsg').innerText = "This is a prime number";
+    }
+}
+ 
