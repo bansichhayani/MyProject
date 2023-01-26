@@ -1,8 +1,44 @@
+*{
+    margin: 0;
+}
 .navbar {
     display: flex;
+    justify-content: space-between;
+    background-color: aqua;
 }
 
 .navbar ul {
     display: flex;
+    align-items: center;
     list-style: none;
+}
+
+.navbar ul li {
+    margin-right: 200px;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.navbar ul li search{
+    cursor: pointer;
+}
+
+.search {
+    width: 50px;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.search input {
+    background: transparent;
+    flex: 1;
+    border: 1px solid;
+    padding: 5px 30px;
+    font-size: 10px;
 }
