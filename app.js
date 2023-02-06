@@ -89,3 +89,39 @@ function onbuttonClick(){
     }
 }
  
+function checkAge(){
+    var age = document.getElementById('ano').value;
+    var i = 18;
+
+    if(age>=18){
+        document.getElementById('amsg').innerText ="you can vote";
+    }
+    else{
+        document.getElementById('amsg').innerText ="you can not vote";
+    }
+}
+
+function onCalc() {
+    let number1 = document.getElementById('num1').value;
+    let number2 = document.getElementById('num2').value;
+    let operator = document.getElementById('op').value;
+
+    switch(operator){
+        case '+' :   
+        let sum = parseInt(number1) + parseInt(number2); 
+            document.getElementById('ans').value = sum;
+            break;
+        case '-' :   
+            let diff = parseInt(number1) - parseInt(number2); 
+            document.getElementById('ans').value = diff;
+            break;
+        case '*' :   
+            let mul = parseInt(number1) * parseInt(number2); 
+            document.getElementById('ans').value = mul;
+            break;
+        case '/' :   
+            let div = parseInt(number1) / parseInt(number2); 
+            document.getElementById('ans').value = div;
+            break;
+    }
+}

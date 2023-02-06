@@ -15,7 +15,7 @@
 
 .navbar ul li {
     display: inline-block;
-    padding: 22px;
+    padding: 7px;
     text-decoration: none;
     color: aliceblue;
 }
@@ -29,7 +29,7 @@
 .search{
     cursor: pointer;
     padding: 10px;
-    width: 1000px;
+    width: 1100px;
 }
 
 .btn {
@@ -55,7 +55,7 @@
 
 .header ul li {
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
     color: white;
 }
 
@@ -64,3 +64,6 @@
     border: 1px solid white;
 }
 
+.shop {
+    justify-content: space-between;
+}
