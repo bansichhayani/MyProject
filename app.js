@@ -129,7 +129,40 @@ function onCalc() {
 for(var i=0;i<=5;i++){
     
     for(var j=0;j<=i;j++){
-        document.write("*");
+        document.write("* ");
     }
     document.write("<br>");
 }
+
+for(var i=0;i<=5;i++){
+    
+    for(var j=i;j<=5;j++){
+        document.write("* ");
+    }
+    document.write("<br>");
+}
+
+let cities = ["Rajkot","Goa","Mumbai","Pune","Delhi","Leh","Sikkim","Punjab","Kochi","Rajsthan"];
+console.log(cities);
+
+let city = cities[5];
+console.log(city);
+
+cities.push("Ladakh");
+console.log(cities);
+
+let type = typeof(cities);
+console.log(type);
+
+Array.isArray(cities);
+
+cities.pop();
+console.log(cities);
+
+let city1 = cities.pop();
+console.log(city1);
+
+console.log(cities);
+
+cities.slice(3,5);
+console.log(cities);
