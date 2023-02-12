@@ -100,6 +100,7 @@ function checkAge(){
         document.getElementById('amsg').innerText ="you can not vote";
     }
 }
+//Switch case Example
 
 function onCalc() {
     let number1 = document.getElementById('num1').value;
@@ -125,6 +126,7 @@ function onCalc() {
             break;
     }
 }
+//for loop Example
 
 for(var i=0;i<=5;i++){
     
@@ -141,6 +143,7 @@ for(var i=0;i<=5;i++){
     }
     document.write("<br>");
 }
+//Array
 
 let cities = ["Rajkot","Goa","Mumbai","Pune","Delhi","Leh","Sikkim","Punjab","Kochi","Rajsthan"];
 console.log(cities);
@@ -164,5 +167,31 @@ console.log(city1);
 
 console.log(cities);
 
-cities.slice(3,5);
+var c1 = cities.slice(3,5);
+console.log(c1);
+
+let index = cities.indexOf("Leh");
+console.log(index);
+
+let check = cities.includes("Sikkim");
+console.log(check);
+
+cities.reverse();
 console.log(cities);
+
+var splice = cities.splice(2,2);
+console.log(splice);
+
+console.log(cities);
+
+//JavaScript Object Notification (JSON)
+
+var user = {
+    name: "Bansi",
+    age: 29,
+}
+
+alert(user.name);
+alert(user.age);
+
+user.hobby = true;
