@@ -1,4 +1,4 @@
-
+//Function
 
 var openImg = document.getElementById('open');
 var closedImg = document.getElementById('close');
@@ -44,6 +44,8 @@ function onInrChange() {
     di.value = usd;
 }
 
+//Timer used
+
 function displayMyName () {
     console.log("Bansi");
 }
@@ -68,7 +70,7 @@ function displayDate() {
 
 setInterval(displayDate, 1000);
 
-
+// If & Else condition Example
 
 function onbuttonClick(){
 
@@ -143,6 +145,7 @@ for(var i=0;i<=5;i++){
     }
     document.write("<br>");
 }
+
 //Array
 
 let cities = ["Rajkot","Goa","Mumbai","Pune","Delhi","Leh","Sikkim","Punjab","Kochi","Rajsthan"];
@@ -195,3 +198,16 @@ alert(user.name);
 alert(user.age);
 
 user.hobby = true;
+
+// Background Image Slider
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+    showSlides(slideIndex = n);
+}

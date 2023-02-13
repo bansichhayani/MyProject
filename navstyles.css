@@ -67,4 +67,12 @@
 .shop {
     justify-content: space-between;
 }
+/* For Background Image Slider */
 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
