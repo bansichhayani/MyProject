@@ -187,17 +187,59 @@ console.log(splice);
 
 console.log(cities);
 
+// How to get alue from Array
+
+let simpleArray = [12,34,56,78,90,100,234,567];
+
+for(let i=0; i < simpleArray.length; i++){
+    let value = simpleArray[i];
+    console.log(value);
+}
+
+//Math Function
+
+var minNum = Math.min(...simpleArray);
+console.log(minNum); 
+
+var maxNum = Math.max(...simpleArray);
+console.log(maxNum);
+
+var randomNum = Math.random();
+console.log(randomNum);
+
+let randomNumber = (randomNum*100);
+console.log(randomNumber);
+
+let floorNum = Math.floor(randomNumber);
+console.log(floorNum);
+
 //JavaScript Object Notification (JSON)
 
 var user = {
     name: "Bansi",
     age: 29,
+    city: "Rajkot",
 }
 
 alert(user.name);
 alert(user.age);
 
 user.hobby = true;
+
+var restaurant = [
+    {
+        name: "La Pino'Z Pizza",
+        costForTwo: 350,
+        rating: 4,
+        cusine: ["Pizzas","Pastas","Beverages","FastFood","Italian","Desserts"]
+    },
+    {
+        name: "McDonald's",
+        costForTwo: 400,
+        rating: 4.1,
+        cusine: ["Burgers","Beverages","Cafe","Desserts"]
+    }
+]
 
 // Background Image Slider
 
@@ -210,4 +252,28 @@ function plusSlides(n){
 
 function currentSlide(n){
     showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+    var i;
+    var slides = document.getElementsByClassName("mySlides fade");
+    var dots = document.getElementsByClassName("dots");
+
+    if(n > slides.length)
+    { 
+        slideIndex = 1;
+    }
+    if(n < 1)
+    {
+        slideIndex = slides.length;
+    }
+    for(i=0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+    for(i=0; i < dots.length; i++){
+        dots[i].className = dots[i].className.replace = ("active", "")
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += "active";
+
 }
