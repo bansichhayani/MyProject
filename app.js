@@ -130,6 +130,7 @@ function onCalc() {
 }
 //for loop Example
 
+// star pattern
 for(var i=0;i<=5;i++){
     
     for(var j=0;j<=i;j++){
@@ -138,6 +139,7 @@ for(var i=0;i<=5;i++){
     document.write("<br>");
 }
 
+//Reverse * pattern
 for(var i=0;i<=5;i++){
     
     for(var j=i;j<=5;j++){
@@ -241,6 +243,28 @@ var restaurant = [
     }
 ]
 
+// sum of Array
 
+let arr1 = [1,4,6,2,8,4];
+let arr2 = [2,3,4,5,6,7];
+let sum1 = 0, sum2 = 0;
 
-    
+for(let i=0; i<arr1.length; i++){
+    sum1 = sum1 + arr1[i];
+}
+document.write("Total is " + sum1)
+
+//for(let j=0; j<arr2.length; i++){
+   // sum2 = sum2 + arr2[j];
+//}
+//document.write("Total is " + sum2)
+
+// Printing Even numbers from n
+
+let n = 25;
+
+for(var i=0; i<=n; i++){
+    if(i%2 == 0){
+        console.log(i);
+    }
+}
