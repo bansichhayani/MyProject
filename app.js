@@ -268,3 +268,66 @@ for(var i=0; i<=n; i++){
         console.log(i);
     }
 }
+
+// Printing Reverse Element
+
+var arry = [34, "Bansi", 45, "Rajkot", 34, "Pune"];
+var revArr = '';
+
+for(var i=arry.length-1; i>=0; i--){
+    revArr = revArr + arry[i];
+    console.log(revArr);
+}
+
+//Excercise 4
+
+var array1 = [1,3,4,6,8,9];
+var array2 = [2,3,6,7,9,12];
+
+var array3 = array1.map((value,index)=>value+array2[index]);
+console.log(array3);
+
+//Excercise 5
+
+let str1 = "javascript";
+console.log(str1);
+
+var first = str1.charAt(0);
+//console.log(first.toUpperCase());
+
+var rem = str1.slice(1);
+//console.log(rem);
+
+var final = first.toUpperCase() + rem;
+console.log(final);
+
+let str2 = '';
+
+for(i=0; i<=str1.length; i++){
+
+    if((i+1)%2==0){
+        
+    }
+}
+
+//Example 6
+
+var string = "how are";
+var char = "y";
+
+for(var i=0; i<=string.length; i++){
+    if(string.charAt(i)==char){
+        console.log('yes');
+    }
+}
+console.log('no');
+
+//Excercise 7 Factorial Number
+
+var number = 10;
+var fact = 1;
+
+for(var i=1; i<=number; i++){
+    fact = fact * i;
+}
+console.log(fact);
