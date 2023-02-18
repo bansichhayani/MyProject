@@ -243,23 +243,25 @@ var restaurant = [
     }
 ]
 
-// sum of Array
+// Excercise 1 sum of Array
 
 let arr1 = [1,4,6,2,8,4];
 let arr2 = [2,3,4,5,6,7];
-let sum1 = 0, sum2 = 0;
+let sum1 = 0, sum2 = 0, sum3 ;
 
 for(let i=0; i<arr1.length; i++){
     sum1 = sum1 + arr1[i];
 }
 document.write("Total is " + sum1)
 
-//for(let j=0; j<arr2.length; i++){
-   // sum2 = sum2 + arr2[j];
-//}
-//document.write("Total is " + sum2)
+for(let j=0; j<arr2.length; j++){
+    sum2 = sum2 + arr2[j];
+}
+document.write("Total is " + sum2)
+sum3 = sum1 + sum2;
+console.log(sum3);
 
-// Printing Even numbers from n
+// Excercise 2 Printing Even numbers from n
 
 let n = 25;
 
@@ -269,7 +271,7 @@ for(var i=0; i<=n; i++){
     }
 }
 
-// Printing Reverse Element
+// Excercise 3 Printing Reverse Element
 
 var arry = [34, "Bansi", 45, "Rajkot", 34, "Pune"];
 var revArr = '';
@@ -301,14 +303,14 @@ var rem = str1.slice(1);
 var final = first.toUpperCase() + rem;
 console.log(final);
 
-let str2 = '';
-
-for(i=0; i<=str1.length; i++){
+let str2;
+for( let i=0; i<str1.length; i++){
 
     if((i+1)%2==0){
-        
+        str1 = str1.replace(str1[i], 'Z');
     }
 }
+console.log(str1);
 
 //Example 6
 
@@ -331,3 +333,50 @@ for(var i=1; i<=number; i++){
     fact = fact * i;
 }
 console.log(fact);
+
+
+//Excercise 8 Assumption number
+
+function onCheck(){
+    let numb = 4786;
+    let gusNum = document.getElementById('num').value;
+
+    for(var i=0; i<=4; i++){
+        if(numb == gusNum){
+            console.log("You are correct");
+            break;
+        }
+        else{
+            console.log("you are wrong");
+            break;
+        }
+    }
+}
+
+//Excercise 9 Palindrom String
+
+function checkPalindrom(){
+    var string = document.getElementById('str').value;
+    var len = string.length;
+    var msg = "It is a Palindrom";
+    console.log(msg);
+
+    for(var i=0; i < string.length/2; i++){
+        if(string[i] != string[len - 1 - i]){
+            msg = "It is not a Palindrom";
+        }
+        console.log(msg);
+    }
+}
+
+//Excercise 10 Summation of every number from 1 to n
+
+function checkSum(){
+    var number = document.getElementById('numb').value;
+    var sum = 0;
+
+    for(i=0; i<=number; i++){
+        sum = sum + i;
+    }
+    console.log(sum);
+}
