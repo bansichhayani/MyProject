@@ -380,3 +380,18 @@ function checkSum(){
     }
     console.log(sum);
 }
+
+// Merge two Arrays
+
+let data = [2,4,6,8,4,9,3];
+let data1 = ['hello', "how r u"];
+let merge = [];
+
+for(let i=0; i<data.length; i++){
+    merge[i] = data[i];
+}
+
+for(i=0; i<data1.length; i++){
+    merge[data.length + i] = data1[i];
+}
+console.log(merge);
