@@ -189,7 +189,7 @@ console.log(splice);
 
 console.log(cities);
 
-// How to get alue from Array
+// How to get value from Array
 
 let simpleArray = [12,34,56,78,90,100,234,567];
 

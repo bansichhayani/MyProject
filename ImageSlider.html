@@ -6,13 +6,21 @@
     </head>
 
     <body>
-        <div class="slider-container">
-            <div class="slider active" style="background-image: url('Images/amz\ img1.jpg');"></div>
-            <div class="slider" style="background-image: url('Images/amz\ img2.jpg');"></div>
-            <div class="slider" style="background-image: url('Images/amz\ img3.jpg');"></div>
-            
-            <button class="arrow left-arrow" id="left">Left</button>
-            <button class="arrow right-arrow" id="right">Right</button>
-         </div>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="Images/amz img5.jpg" id="lastClone" alt="">
+                <img src="Images/amz img1.jpg" alt="">
+                <img src="Images/amz img2.jpg" alt="">
+                <img src="Images/amz img3.jpg" alt="">
+                <img src="Images/amz img4.jpg" alt="">
+                <img src="Images/amz img5.jpg" alt="">
+                <img src="Images/amz img1.jpg" id="firstClone" alt="">
+            </div>
+        </div>
+
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
+
+        <script src="sliderlogic.js"></script>
     </body>
 </html>
