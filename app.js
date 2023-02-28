@@ -23,6 +23,7 @@ function onClosedImage() {
         openImg.classList.add('active');
     }
 }
+// Rupees to Dollar Convrter
 
 function onDollarChange() {
     var dollar = di.value;

@@ -33,11 +33,32 @@ function calculateWeight(){
 
     let Kg = Pound / 2.2046;
     
-    document.getElementById('weig').value = Kg;
+    document.getElementById('msg').innerText = "Your weight in Kilograms is  " +Kg;
 }
 
 //Digital Calculator
 
 function Zero(){
-    document.getElementById('ans').vlaue = 0;
+   
 }
+
+// Promises
+
+let p = new Promise(function(resolve, reject){
+
+    let sum = 4 + 5;
+
+    if(sum > 0)
+        resolve(sum);
+    else if(sum < 0)
+        reject("Sum is not valid");
+});
+
+p.then(function(s){
+    console.log("Promise is sucessful....");
+    console.log(s);
+})
+
+p.catch(function(s){
+    console.log("Promise is unsucessful...")
+})
